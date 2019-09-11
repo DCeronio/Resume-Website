@@ -1,0 +1,249 @@
+<html>
+
+<head>
+    <title>Dylan's Resume</title>
+    <style>
+        html,
+        body {
+            scroll-behavior: smooth;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        body {
+            margin: 0;
+            background: black;
+            font-size: x-large;
+        }
+
+        header {
+            border-bottom: none;
+            background: black;
+            ;
+        }
+
+        #background {
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+
+        header h1 {
+            color: white;
+            text-align: center;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: black;
+            z-index: 999;
+            top: 0;
+        }
+
+        #navbar a {
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+            font-size: medium;
+            transition: all 0.3s ease-in;
+        }
+
+        #navbar a:hover {
+            color: gray;
+        }
+
+        .content {
+            padding: 16px;
+            background: white;
+        }
+
+        .row {
+            color: white;
+            position: relative;
+            margin: 5%;
+            border-radius: 10px;
+            padding: 20px;
+            background: #444;
+            text-align: center;
+            box-shadow: 5px 10px black;
+        }
+
+        .row ul li {
+            list-style-type: none;
+        }
+
+        ul.CourseList {
+            display: inline-block;
+        }
+
+        a.anchor {
+            position: relative;
+            visibility: hidden;
+            left: 0px;
+            top: -120px;
+        }
+
+        #contactinfo {
+            text-align: center;
+        }
+
+        #contactinfo a {
+            color: white;
+        }
+
+        footer {
+            color: black;
+            text-align: center;
+            margin: 20%;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky+.content {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Dylan Ceronio Résumé</h1>
+    </header>
+
+    <img id="background"
+        src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+
+    <div id="navbar">
+        <a href="#Contact">Contact</a>
+        <a href="#Education">Education</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Tech">Technical Skills</a>
+        <a href="#Coursework">Related Coursework</a>
+        <a href="#WorkAndVolunteer">Work and Volunteer</a>
+        <a href="#Clubs">Clubs</a>
+    </div>
+
+    <div class="content">
+        <div class="row">
+            <a class="anchor" id="Contact"></a>
+            <h3>Contact</h3>
+            <p id="contactinfo">Bay Area | DylanCeronio@SJSU.edu | <a href="https://github.com/DCeronio">GitHub</a> | <a
+                    href="https://www.linkedin.com/in/dylanceronio/">LinkedIn</a></p>
+        </div>
+
+        <div class="row">
+            <a class="anchor" id="Education"></a>
+            <h3>Education</h3>
+            <ul>
+                <li><strong>San Jose State University</strong>, San Jose, CA</li>
+                <li><strong>B.S in Computer Science</strong></li>
+                <li><strong>GPA:</strong> 3.75</li>
+                <li><strong>Expected Graduation</strong> May 2020</li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <a class="anchor" id="Projects"></a>
+            <h3>Projects</h3>
+            <h4>Interpreter and Parser</h4>
+            <p><strong>Technologies used</strong> Java, ANTLR</p>
+            <ul>
+                <li>Implemented an interpreter that understands a lightweight version of Javascript</li>
+                <li>Implemented a parser grammar file</li>
+                <li>Features: Clousures, if/then statements, while blocks, function applications, sequential statements
+                </li>
+            </ul>
+
+            <h4>Task Board</h4>
+            <p><strong>Technologies used</strong> Java, JSwing</p>
+            <ul>
+                <li>Interface for loggin in, Serializing, and creating tasks</li>
+                <li>Designed using Sequence and Class Diagrams</li>
+                <li>Created with the Model/View/Controller (MVC) Pattern</li>
+            </ul>
+
+            <h4>Mixed Model of Bare Minimum Computer System</h4>
+            <p><strong>Technologies used</strong> ModelSim</p>
+            <ul>
+                <li>Modeled a basic computer system to understand computer architecture class specific ISA</li>
+                <li>All parts implemented in logic gates except for the Control Unit which was implemented in Behavioral
+                    logic</li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <a class="anchor" id="Tech"></a>
+            <h3>Technical Skills</h3>
+            <p><strong>Proficient In:</strong> Java and C</p>
+            <p><strong>Familiar with:</strong> Javascript, Racket, Prolog, Python, Ruby, HTML, CSS</p>
+            <p><strong>Software Tools</strong> Git, Slack, Java Swing, ModelSim</p>
+        </div>
+
+        <div class="row">
+            <a class="anchor" id="Coursework"></a>
+            <h3>Related Coursework</h3>
+            <ul class="CourseList">
+                <li>Information Security</li>
+                <li>Operating Systems</li>
+                <li>Object Oriented Design</li>
+            </ul>
+
+            <ul class="CourseList">
+                <li>Data Structures and Algorithms</li>
+                <li>Programming Paradigms</li>
+                <li>Formal Languages and Computability</li>
+            </ul>
+
+            <ul class="CourseList">
+                <li>Intro to Computer Systems</li>
+                <li>Intro to Data Structures</li>
+                <li>Intro to Programming</li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <a class="anchor" id="WorkAndVolunteer"></a>
+            <h3>Work Experience and Volunteer Work</h3>
+            <p><strong>The CheeseCake Factory Busser</Strong>, Santa Clara, CA, 95050</p>
+            <p><strong>Corinthian Parking Services Valet</strong>, Campbell, CA, 950008</p>
+            <p><strong>Pismo Yogurt Cashier</strong>, Pismo Beach, CA, 93448</p>
+            <p><strong>Applicable Skills:</strong> Communication, Costomer Service, Phone Etiquette</p>
+            <p><strong>Boy Scouts of America,</strong> Nipomo, CA, Achieved Rank of Eagle Scout, Participated in many
+                hours
+                of community service</p>
+        </div>
+
+        <div class="row">
+            <a class="anchor" id="Clubs"></a>
+            <h3>Clubs</h3>
+            <p><strong>Hoplite, Computer Science Interview Question Club</strong> - Member since Spring 2018</p>
+            <p><strong>Machine Learning Club</strong> - Member since Spring 2019 (In process of becoming official Club)
+            </p>
+            <p><strong>SJSU CS Club</strong> - Member since Spring 2018</p>
+        </div>
+
+        <footer><em>2019 Dylan Ceronio Resume Website</em></footer>
+    </div>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
